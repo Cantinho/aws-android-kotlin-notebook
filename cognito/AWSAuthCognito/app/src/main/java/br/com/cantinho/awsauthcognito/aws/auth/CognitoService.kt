@@ -1,6 +1,10 @@
 package br.com.cantinho.awsauthcognito.aws.auth
 
-class CognitoService() {
+import com.amazonaws.auth.CognitoCredentialsProvider
+import com.amazonaws.mobileconnectors.cognitoidentityprovider.CognitoUserPool
+
+class CognitoService(val userPool: CognitoUserPool, val credentialsProvider: CognitoCredentialsProvider) {
+
 
 
 
